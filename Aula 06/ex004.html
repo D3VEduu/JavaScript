@@ -17,7 +17,16 @@
         var nome = prompt("Qual é seu nome?")
         document.write(`Olá ${nome}. Seu nome tem ${nome.length} letras. <br>`) //document.write -> escreve no documento
         document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()} <br>`) //toUpperCase -> transforma as letras em maiusculas
-        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}`) //toLowerCase -> transforma as letras em minusculas
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()} <br>`) //toLowerCase -> transforma as letras em minusculas
+
+        var n1 = parseFloat(prompt("Digite um numero: "))
+        var n2 = parseFloat(prompt("Digite outro numero: "))
+        var soma = n1 + n2
+
+        document.write(`O valor do 1º numero é ${n1} e o valor do 2º numero é ${n2} o valor total é de ${soma.toLocaleString("pt-BR", {style: "currency", currency: "BRL"}).replace('.', ',')}`)
+
+        //replace -> troca um item por outro, no exemplo acima trocamos o ponto pela virgula
+        //toLocaleString -> formata para uma string de um local, no exemplo trocamos para PT-BR e REAIS
     </script>
 
 </body>
